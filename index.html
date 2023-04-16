@@ -32,9 +32,11 @@
             >Web<span class="nav-logo-item">Studio</span>
           </a>
           <ul class="list">
-            <li class="list-item">
-              <a href="./index.html" class="link nav-link">Studio</a>
-            </li>
+            <div class="this-page">
+              <li class="list-item">
+                <a href="./index.html" class="link nav-link">Studio</a>
+              </li>
+            </div>
             <li class="list-item">
               <a href="./portfolio.html" class="link nav-link">Portfolio</a>
             </li>
@@ -65,7 +67,18 @@
           <!-- head -->
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <!-- button -->
-          <button type="button" class="btn">Order Service</button>
+          <button type="button" class="btn" data-modal-open>Order Service</button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <div class="modal-icon">
+                <button type="button" class="modal-btn" data-modal-close>
+                  <svg class="icon-close" width="8" height="8">
+                    <use href="./images/icon.svg#icon-close"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -156,28 +169,48 @@
                 <p class="team-posicion">Product Designer</p>
                 <ul class="social-icon-list list">
                   <li class="social-icon-list-item">
-                    <a href="" class="link-icon link">
+                    <a
+                      class="link-icon link"
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <svg class="icon" width="16" height="16">
                         <use href="./images/icon.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-icon-list-item">
-                    <a href="" class="link-icon link">
+                    <a
+                      class="link-icon link"
+                      href="https://twitter.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <svg class="icon" width="16" height="16">
                         <use href="./images/icon.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-icon-list-item">
-                    <a href="" class="link-icon link">
+                    <a
+                      class="link-icon link"
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <svg class="icon" width="16" height="16">
                         <use href="./images/icon.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-icon-list-item">
-                    <a href="" class="link-icon link">
+                    <a
+                      class="link-icon link"
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <svg class="icon" width="16" height="16">
                         <use href="./images/icon.svg#icon-linkedin"></use>
                       </svg>
@@ -193,28 +226,48 @@
                 <p class="team-posicion">Frontend Developer</p>
                 <ul class="social-icon-list list">
                   <li class="social-icon-list-item">
-                    <a href="" class="link-icon link">
+                    <a
+                      class="link-icon link"
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <svg class="icon" width="16" height="16">
                         <use href="./images/icon.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-icon-list-item">
-                    <a href="" class="link-icon link">
+                    <a
+                      class="link-icon link"
+                      href="https://twitter.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <svg class="icon" width="16" height="16">
                         <use href="./images/icon.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-icon-list-item">
-                    <a href="" class="link-icon link">
+                    <a
+                      class="link-icon link"
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <svg class="icon" width="16" height="16">
                         <use href="./images/icon.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-icon-list-item">
-                    <a href="" class="link-icon link">
+                    <a
+                      class="link-icon link"
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <svg class="icon" width="16" height="16">
                         <use href="./images/icon.svg#icon-linkedin"></use>
                       </svg>
@@ -230,28 +283,48 @@
                 <p class="team-posicion">Marketing</p>
                 <ul class="social-icon-list list">
                   <li class="social-icon-list-item">
-                    <a href="" class="link-icon link">
+                    <a
+                      class="link-icon link"
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <svg class="icon" width="16" height="16">
                         <use href="./images/icon.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-icon-list-item">
-                    <a href="" class="link-icon link">
+                    <a
+                      class="link-icon link"
+                      href="https://twitter.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <svg class="icon" width="16" height="16">
                         <use href="./images/icon.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-icon-list-item">
-                    <a href="" class="link-icon link">
+                    <a
+                      class="link-icon link"
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <svg class="icon" width="16" height="16">
                         <use href="./images/icon.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-icon-list-item">
-                    <a href="" class="link-icon link">
+                    <a
+                      class="link-icon link"
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <svg class="icon" width="16" height="16">
                         <use href="./images/icon.svg#icon-linkedin"></use>
                       </svg>
@@ -267,28 +340,48 @@
                 <p class="team-posicion">UI Designer</p>
                 <ul class="social-icon-list list">
                   <li class="social-icon-list-item">
-                    <a href="" class="link-icon link">
+                    <a
+                      class="link-icon link"
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <svg class="icon" width="16" height="16">
                         <use href="./images/icon.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-icon-list-item">
-                    <a href="" class="link-icon link">
+                    <a
+                      class="link-icon link"
+                      href="https://twitter.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <svg class="icon" width="16" height="16">
                         <use href="./images/icon.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-icon-list-item">
-                    <a href="" class="link-icon link">
+                    <a
+                      class="link-icon link"
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <svg class="icon" width="16" height="16">
                         <use href="./images/icon.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-icon-list-item">
-                    <a href="" class="link-icon link">
+                    <a
+                      class="link-icon link"
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <svg class="icon" width="16" height="16">
                         <use href="./images/icon.svg#icon-linkedin"></use>
                       </svg>
@@ -310,42 +403,42 @@
             <li class="castomers-list-item">
               <a href="" class="castomers-link link">
                 <svg class="castomers-icon" width="104" height="56">
-                  <use href="./images/icon.svg#icon-group1" class="icon"></use>
+                  <use href="./images/icon.svg#icon-logo1" class="icon"></use>
                 </svg>
               </a>
             </li>
             <li class="castomers-list-item">
               <a href="" class="castomers-link link">
                 <svg class="castomers-icon" width="104" height="56">
-                  <use href="./images/icon.svg#icon-group2" class="icon"></use>
+                  <use href="./images/icon.svg#icon-logo2" class="icon"></use>
                 </svg>
               </a>
             </li>
             <li class="castomers-list-item">
               <a href="" class="castomers-link link">
                 <svg class="castomers-icon" width="104" height="56">
-                  <use href="./images/icon.svg#icon-group3" class="icon"></use>
+                  <use href="./images/icon.svg#icon-logo3" class="icon"></use>
                 </svg>
               </a>
             </li>
             <li class="castomers-list-item">
               <a href="" class="castomers-link link">
                 <svg class="castomers-icon" width="104" height="56">
-                  <use href="./images/icon.svg#icon-group4" class="icon"></use>
+                  <use href="./images/icon.svg#icon-logo4" class="icon"></use>
                 </svg>
               </a>
             </li>
             <li class="castomers-list-item">
               <a href="" class="castomers-link link">
                 <svg class="castomers-icon" width="104" height="56">
-                  <use href="./images/icon.svg#icon-group5" class="icon"></use>
+                  <use href="./images/icon.svg#icon-logo5" class="icon"></use>
                 </svg>
               </a>
             </li>
             <li class="castomers-list-item">
               <a href="" class="castomers-link link">
                 <svg class="castomers-icon" width="104" height="56">
-                  <use href="./images/icon.svg#icon-group6" class="icon"></use>
+                  <use href="./images/icon.svg#icon-logo6" class="icon"></use>
                 </svg>
               </a>
             </li>
@@ -371,28 +464,48 @@
           <p class="footer-social-title">Social media</p>
           <ul class="footer-list list">
             <li class="footer-list-item">
-              <a href="" class="footer-social-link">
+              <a
+                class="footer-social-link"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <svg class="icon" width="24" height="24">
                   <use href="./images/icon.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-list-item">
-              <a href="" class="footer-social-link">
+              <a
+                class="footer-social-link"
+                href="https://twitter.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <svg class="icon" width="24" height="24">
                   <use href="./images/icon.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-list-item">
-              <a href="" class="footer-social-link">
+              <a
+                class="footer-social-link"
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <svg class="icon" width="24" height="24">
                   <use href="./images/icon.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-list-item">
-              <a href="" class="footer-social-link">
+              <a
+                class="footer-social-link"
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <svg class="icon" width="24" height="24">
                   <use href="./images/icon.svg#icon-linkedin"></use>
                 </svg>
@@ -402,5 +515,7 @@
         </div>
       </div>
     </footer>
+    /** |============================ | modal script |============================ */
+    <script src="./js/modal.js"></script>
   </body>
 </html>
