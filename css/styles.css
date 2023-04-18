@@ -112,16 +112,6 @@ img {
 .this-page {
   position: relative;
 }
-.this-page .list-item::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  bottom: 0;
-
-  background: var(--pressed-state-cl);
-  border-radius: 2px;
-}
 
 .nav-logo-item {
   color: var(--dark-color);
@@ -146,9 +136,22 @@ img {
 }
 
 .nav-link {
+  position: relative;
   display: flex;
   padding-top: 24px;
   padding-bottom: 24px;
+}
+
+.nav-link.current::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: -1px;
+
+  background: var(--pressed-state-cl);
+  color: var(--pressed-state-cl);
+  border-radius: 2px;
 }
 .list .nav-link {
   font-weight: 500;
@@ -241,7 +244,7 @@ img {
   background-color: var(--primary-barnd-color);
   cursor: pointer;
 
-  transition: 250ms var(--сubic);
+  transition: background 250ms var(--сubic);
 }
 
 .btn:hover,
@@ -259,9 +262,11 @@ img {
   height: 100%;
 
   background-color: var(--backdrop);
+  transition: opacity 250ms var(--сubic), visibility 250ms var(--сubic);
 }
 .backdrop.is-hidden {
   opacity: 0;
+  visibility: hidden;
   pointer-events: none;
 }
 .modal {
@@ -298,7 +303,7 @@ img {
   background-color: #e7e9fc;
   background-size: cover;
 
-  transition: 250ms var(--сubic);
+  transition: color 250ms var(--сubic), background 250ms var(--сubic);
 }
 .icon-close {
   fill: currentColor;
@@ -368,15 +373,15 @@ img {
   padding-bottom: 120px;
 }
 .title {
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
-
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
 
   margin-bottom: 72px;
 
@@ -425,6 +430,7 @@ img {
   line-height: 24px;
   text-align: center;
   letter-spacing: 0.02em;
+
   margin-bottom: 8px;
 
   color: var(--dark-color);
@@ -438,6 +444,7 @@ img {
   line-height: 24px;
   text-align: center;
   letter-spacing: 0.02em;
+
   margin-bottom: 8px;
 }
 
@@ -470,7 +477,7 @@ img {
 
   border-radius: 50%;
 
-  transition: 250ms var(--сubic);
+  transition: background 250ms var(--сubic);
 }
 .link-icon:hover,
 .link-icon:focus {
@@ -521,19 +528,18 @@ img {
 
 /* ===ICONS ===*/
 .castomers-link {
-  color: var(--castomer-cl);
-
-  /* width: 100%; */
-  height: 100%;
-
-  border: 1px solid var(--border-cl);
-  border-radius: 4px;
-
   display: flex;
   justify-content: center;
   align-items: center;
 
-  transition: 250ms var(--сubic);
+  /* width: 100%; */
+  height: 100%;
+
+  color: var(--castomer-cl);
+  border: 1px solid var(--border-cl);
+  border-radius: 4px;
+
+  transition: border 250ms var(--сubic), color 250ms var(--сubic);
 }
 .castomers-icon {
   fill: currentColor;
@@ -564,16 +570,18 @@ img {
 .footer-logo {
   display: inline-block;
   align-items: center;
+
   letter-spacing: 0.03em;
   text-decoration: none;
   text-transform: uppercase;
-  margin-bottom: 16px;
 
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
+
+  margin-bottom: 16px;
 
   color: var(--primary-barnd-color);
 }
@@ -623,7 +631,7 @@ img {
   background-color: var(--primary-barnd-color);
   background-size: cover;
 
-  transition: 250ms var(--сubic);
+  transition: background 250ms var(--сubic);
 }
 .footer-social-link:hover,
 .footer-social-link:focus {
@@ -657,7 +665,8 @@ img {
   background: var(--light-color);
   color: var(--primary-barnd-color);
 
-  transition: 250ms var(--сubic);
+  transition: color 250ms var(--сubic), background 250ms var(--сubic), border 250ms var(--сubic),
+    box-shadow 250ms var(--сubic);
 }
 
 .portfolio-btn:hover,
@@ -707,7 +716,7 @@ img {
 }
 .card .link {
   display: block;
-  transition: 250ms var(--сubic);
+  transition: box-shadow 250ms var(--сubic);
 }
 .card .link:hover,
 .card .link:focus {
@@ -738,7 +747,7 @@ img {
 
   background-color: var(--primary-barnd-color);
   transform: translateY(100%);
-  transition: transform 250ms ease;
+  transition: transform 250ms var(--сubic);
 }
 .card:hover .overlay {
   transform: translateY(0);
