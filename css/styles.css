@@ -658,6 +658,12 @@ img {
 
   padding: 12px 24px;
 
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+
   border: 1px solid var(--heder-border-cl);
   border-radius: 4px;
   cursor: pointer;
@@ -699,7 +705,6 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--dark-color);
-  margin-bottom: 8px;
 }
 /* Cards */
 
